@@ -59,9 +59,3 @@ test('Should be able to navigate to a project page', function() {
     });
   });
 });
-
-test('Should be able to visit a project page directly', function() {
-  visit('/projects/2').then(function() {
-    equal(find('h4').text(), 'Authentication');
-  });
-});
