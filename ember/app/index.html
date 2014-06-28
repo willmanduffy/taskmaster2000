@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Taskmaster</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/taskmaster.css">
+  </head>
+  <body>
+    <script>
+      window.TaskmasterENV = {{ENV}};
+      window.EmberENV = window.TaskmasterENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/taskmaster.js"></script>
+    <script>
+      window.Taskmaster = require('taskmaster/app')['default'].create(TaskmasterENV.APP);
+    </script>
+  </body>
+</html>
