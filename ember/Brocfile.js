@@ -18,3 +18,7 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 
 module.exports = app.toTree();
+
+app.import({development:'vendor/route-recognizer/dist/route-recognizer.js'});
+app.import({development:'vendor/FakeXMLHttpRequest/fake_xml_http_request.js'});
+app.import({development:'vendor/pretender/pretender.js'});
