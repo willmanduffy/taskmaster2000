@@ -1,3 +1,5 @@
-{{#each}}
-  {{link-to name 'projects.show' this}}
-{{/each}}
+<ul>
+  {{#each}}
+    <li>{{link-to name 'projects.show' this}}</li>
+  {{/each}}
+</ul>
