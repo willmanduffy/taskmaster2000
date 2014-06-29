@@ -1,3 +1,10 @@
 html, body {
   margin: 0;
 }
+
+/*Move*/
+
+.tasks {
+  margin-top: 20px;
+  width: 100%;
+}
