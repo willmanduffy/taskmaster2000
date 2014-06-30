@@ -18,9 +18,8 @@ export default Ember.ObjectController.extend({
 
       this.store.find('project', project_id).then(function(project) {
         task.set('project', project);
+        task.save();
       });
-
-      task.save();
 
       this.set('newName', '');
     }
